@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aroma — Искусство парфюмерии</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#" class="logo">Aro<span>ma</span></a>
+      <nav class="nav">
+        <a href="#products">Ароматы</a>
+        <a href="#products">Бренды</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Блог</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#" aria-label="Аккаунт"><i class="fa-regular fa-user"></i></a>
+        <a href="#" aria-label="Корзина"><i class="fa-solid fa-bag-shopping"></i></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#products">Ароматы</a>
+    <a href="#products">Бренды</a>
+    <a href="#about">О нас</a>
+    <a href="#reviews">Блог</a>
+  </nav>
+
+  <main>
+    <section class="hero fade-in" data-delay="0">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Нишевые ароматы</p>
+        <h1 class="hero__title">Искусство парфюмерии</h1>
+        <p class="hero__subtitle">Откройте для себя нишевые ароматы, созданные вручную</p>
+        <a href="#products" class="btn-glow">Исследовать коллекцию</a>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="products" data-delay="150">
+      <div class="section__header">
+        <span class="section__label">Бестселлеры</span>
+        <div class="divider"></div>
+        <h2 class="section__title">Популярные ароматы</h2>
+      </div>
+      <div class="products">
+        <article class="product-card">
+          <div class="product-card__visual">
+            <img src="images/rose-noire.webp" alt="Rose Noire" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">RABANNE 1 Million</h3>
+            <p class="product-card__note">кожаные</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">12 900 ₽</span>
+              <button class="btn-outline btn-cart" data-name="Rose Noire">В корзину</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__visual">
+            <img src="images/amber-veil.webp" alt="Amber Veil" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Creed Aventus</h3>
+            <p class="product-card__note">ревесные, цитрусовые, фруктовые</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">15 400 ₽</span>
+              <button class="btn-outline btn-cart" data-name="Amber Veil">В корзину</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__visual">
+            <img src="images/citrus-mist.webp" alt="Citrus Mist" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Versace Eros</h3>
+            <p class="product-card__note">свежий цитрусовый</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">9 800 ₽</span>
+              <button class="btn-outline btn-cart" data-name="Citrus Mist">В корзину</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-card__visual">
+            <img src="images/velvet-oud.webp" alt="Velvet Oud" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">DIOR Sauvage</h3>
+            <p class="product-card__note">восточные</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">18 200 ₽</span>
+              <button class="btn-outline btn-cart" data-name="Velvet Oud">В корзину</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section fade-in" id="reviews" data-delay="450">
+      <div class="section__header">
+        <span class="section__label">Отзывы</span>
+        <div class="divider"></div>
+        <h2 class="section__title">Голоса наших клиентов</h2>
+      </div>
+      <div class="reviews-wrapper">
+        <div class="reviews-slider">
+          <div class="reviews-track" id="reviewsTrack">
+            <div class="review-slide">
+              <blockquote class="review-slide__quote">
+                Aroma изменила моё представление о парфюмерии. Rose Noire — это произведение искусства, которое остаётся на коже весь день.
+              </blockquote>
+              <div class="review-slide__author">
+                <div class="review-slide__avatar"><i class="fa-solid fa-user"></i></div>
+                <span class="review-slide__name">Елена Волкова</span>
+                <span class="review-slide__role">Коллекционер ароматов</span>
+              </div>
+            </div>
+            <div class="review-slide">
+              <blockquote class="review-slide__quote">
+                Изысканная упаковка, безупречный сервис и ароматы, которых не найти в обычных магазинах. Velvet Oud — моя новая одержимость.
+              </blockquote>
+              <div class="review-slide__author">
+                <div class="review-slide__avatar"><i class="fa-solid fa-user"></i></div>
+                <span class="review-slide__name">Александр Морозов</span>
+                <span class="review-slide__role">Архитектор</span>
+              </div>
+            </div>
+            <div class="review-slide">
+              <blockquote class="review-slide__quote">
+                Наконец-то бутик, где чувствуется настоящая роскошь без показной помпезности. Каждая покупка — маленький ритуал.
+              </blockquote>
+              <div class="review-slide__author">
+                <div class="review-slide__avatar"><i class="fa-solid fa-user"></i></div>
+                <span class="review-slide__name">Мария Козлова</span>
+                <span class="review-slide__role">Редактор Vogue</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-nav">
+          <button id="reviewPrev" aria-label="Предыдущий отзыв"><i class="fa-solid fa-chevron-left"></i></button>
+          <div class="reviews-dots" id="reviewsDots"></div>
+          <button id="reviewNext" aria-label="Следующий отзыв"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--about fade-in" id="about" data-delay="550">
+      <span class="section__label">О нас</span>
+      <div class="divider"></div>
+      <p>
+        Aroma — это кураторская коллекция нишевой парфюмерии для тех, кто ценит редкость, мастерство и безупречную эстетику. Каждый флакон — история, рассказанная языком ароматов.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">Aro<span>ma</span></a>
+        <p>Изысканная парфюмерия для ценителей. Москва, ул. Столешников, 12</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <h4 class="footer__title">Контакты</h4>
+        <ul class="footer__links">
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:hello@aroma.ru">hello@aroma.ru</a></li>
+          <li><a href="#">Доставка и возврат</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+        </ul>
+      </div>
+      <div class="footer__subscribe">
+        <h4 class="footer__title">Подписка</h4>
+        <p>Будьте первыми, кто узнает о новых коллекциях и эксклюзивных предложениях.</p>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" placeholder="Ваш email" required aria-label="Email для подписки">
+          <button type="submit">Подписаться</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Aroma. Все права защищены.</span>
+      <span>Создано с любовью к ароматам</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
